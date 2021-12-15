@@ -1,0 +1,502 @@
+/* Header Top */
+.header-top {
+  background-color: #002835;
+  height: 6vh;
+  padding-right: 20px;
+}
+.header-top-inner {
+  height: 100%;
+}
+.header-top-inner > form {
+  display: flex;
+}
+.header-top-inner > form > input {
+  background-color: transparent;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #004983;
+  margin: 0px 10px;
+}
+.header-top-inner > form > input::placeholder {
+  color: #ffffff;
+  padding-left: 3px;
+}
+.header-top-btn {
+  font-size: 13px;
+  padding: 3px;
+  color: #000000;
+  font-weight: 600;
+}
+.header-top-p {
+  font-size: 9px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 3vh;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media (max-width: 576px) {
+  .header-top-inner > form {
+    display: none;
+  }
+}
+
+/* Header Main with Navbar */
+.nav-wrapper {
+  background: transparent
+    url(https://www.greyhound.com/content/images/bg/header-shading.png)
+    no-repeat;
+  border: 0 none;
+  position: relative;
+  border-bottom: 2px solid #004963;
+  height: 80px;
+}
+.nav-a-item {
+  color: #ffffff;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+}
+.img-fluid1 {
+  width: 100px;
+  height: 50px;
+}
+
+/* Main Container */
+.outer {
+  display: flex;
+  flex-direction: column;
+  background-color: #004963;
+  color: white;
+  height: 245px;
+}
+/* first-part */
+.first,
+.second,
+.third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 0rem 2rem;
+}
+.book-trip {
+  font-size: 30px;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+.sign-btn-sm {
+  display: none;
+}
+.road-rewards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  flex: 2;
+  background-color: #00374a;
+}
+.road-rewards > p {
+  margin-top: 1rem;
+}
+.road-rewards > form > input {
+  background-color: transparent;
+  padding: 6px 15px;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #1a1841;
+}
+.lower {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+}
+.lower > .question-mark {
+  background-color: #004963;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.lower > button {
+  background-color: #004963;
+  font-weight: 600;
+}
+/* second-part */
+.second {
+  margin-top: -20px;
+}
+.from-place,
+.to-place,
+.depart-on,
+.return-trip {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  background-color: #fff;
+}
+.depart-on,
+.return-trip {
+  flex: 1;
+}
+.from-place > label,
+.to-place > label,
+.return-trip > label,
+.depart-on > label {
+  padding: 0.5rem 0.5rem;
+  flex: 1;
+  text-align: center;
+}
+.from-place > input,
+.to-place > input,
+.depart-on > input {
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  color: #004963;
+  flex: 2;
+}
+.from-place > p,
+.to-place > p,
+.depart-on > p {
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  flex: 1;
+  color: #fff;
+  background-color: #f57812;
+}
+.depart-on {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.depart-on > p {
+  padding: 0rem 1rem;
+}
+.arrow-design {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 4px 0.8rem;
+  color: #f57812;
+  font-size: large;
+  font-weight: bold;
+  flex-direction: column;
+}
+/* third-part */
+.third {
+  margin-top: -30px;
+}
+.third > form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.third > form > input {
+  width: 25%;
+  background-color: transparent;
+  padding: 6px 15px;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #1a1841;
+}
+@media (max-width: 750px) {
+  .outer {
+    display: flex;
+    flex-direction: column;
+    background-color: #004963;
+    color: white;
+    height: auto;
+    padding: 0.5rem;
+  }
+  /* first-part */
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: none;
+    padding: 0.2rem;
+  }
+  .book-trip {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+  .sign-btn-sm {
+    display: block;
+    background-color: #00374a;
+    color: white;
+    margin-bottom: 2rem;
+    width: 20%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 10px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .road-rewards {
+    display: none;
+  }
+  /* second-part */
+  .second {
+    flex-direction: column;
+    flex: none;
+    padding: 0;
+  }
+  .from-place,
+  .to-place {
+    flex: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .depart-on,
+  .return-trip {
+    display: none;
+  }
+  .from-place > label,
+  .to-place > label {
+    padding: 0.1rem 0.2rem;
+    margin-top: 5px;
+    flex: 0.5;
+  }
+  .from-place > input,
+  .to-place > input {
+    padding: 0.1rem;
+  }
+  .from-place > p,
+  .to-place > p {
+    flex: 0.5;
+  }
+  .arrow-design {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #f57812;
+  }
+  /* third-part */
+  .third {
+    display: none;
+  }
+}
+
+/* Retriev Block */
+.line {
+  background-color: #004963;
+  height: 5px;
+}
+.retrive-div {
+  background-color: #f1eded;
+  padding: 20px 0px;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+}
+.retrive-div > button {
+  color: #004963;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Promo Block */
+.promo {
+  background-color: #c25700;
+}
+.promo-h3 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 12px 9px 0 rgb(0 0 0 / 10%);
+}
+.promo-p {
+  font-size: 12px;
+  font-weight: 600;
+}
+.btn-design {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.30769231em;
+  padding-top: 1.15384615em;
+  padding-bottom: 1.15384615em;
+  padding-left: 2.30769231em;
+  padding-right: 3.07692308em;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 100px;
+  color: #004963;
+  background-color: #ffffff;
+  white-space: normal;
+  -webkit-border-radius: 30px 0 60px 30px;
+  -moz-border-radius: 30px 0 60px 30px;
+  border-radius: 30px 0 60px 30px;
+  background-clip: padding-box;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  min-height: 3.07692308em;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  border-width: 0;
+}
+
+/* Peace of Mind Block */
+.h2-special {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.35em;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #787878;
+  padding-left: 5.5em;
+}
+.h2-special em {
+  font-size: 60px;
+  line-height: 1em;
+  font-weight: 600;
+  padding-left: 1.5em;
+  white-space: nowrap;
+  display: block;
+  text-transform: uppercase;
+  font-style: normal;
+}
+/* @media (minwidth: 1000) {
+}
+ */
+@media (max-width: 1000px) {
+  .h2-special em {
+    font-size: 24px;
+    padding-left: 0px;
+    letter-spacing: 0px;
+  }
+  .h2-special {
+    padding-left: 0.3em;
+    letter-spacing: 0px;
+  }
+  .hotel-img {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .about-div {
+    margin: 0px;
+  }
+}
+.feature-list-item {
+  list-style-type: none;
+  text-align: center;
+}
+.mobile-carousel-three {
+  text-align: left;
+  margin-bottom: 4.61538462em;
+  list-style-type: none;
+}
+.feature-list-item > img {
+  height: 200px;
+  width: 200px;
+}
+.h3 {
+  font-size: 22px;
+  line-height: 1.27272727em;
+  margin-bottom: 0.90909091em;
+  letter-spacing: -0.05em;
+  text-transform: none;
+  font-family: GHBold, Arial, sans-serif;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #484848;
+}
+
+.story-div {
+  background-image: url("img/insideBus.jpg");
+  height: 400px;
+  background-size: cover;
+}
+.story-child {
+  height: 400px;
+  padding: 100px 20px 40px 10px;
+  right: 8%;
+}
+.story-p1 {
+  font-size: 32px;
+  color: #362626;
+  text-align: right;
+  font-weight: 600;
+  word-wrap: break-word;
+  line-height: 1;
+  padding-left: 50px;
+}
+.story-p2 {
+  font-size: 20px;
+  color: #362626;
+  font-weight: 600;
+  text-align: right;
+  line-height: 0.5;
+}
+.hotel {
+  background-image: url("https://www.greyhound.com/content/images/bg/dropdown-noise.gif");
+}
+.hotel-h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #004963;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1;
+}
+.hotel-h2-second {
+  font-size: 24px;
+  color: #777777;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1;
+}
+.hotel-p {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #484848;
+  margin-top: 15px;
+}
+.destination-div {
+  border-right: 1px solid #ffffff;
+}
+.destination-div > p {
+  color: #004963;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.about-div {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}

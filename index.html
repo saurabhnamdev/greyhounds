@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Grey-Hounds</title>
+  </head>
+
+  <body>
+    <!-- Header Top -->
+    <section class="header-top">
+      <div
+        class="d-flex justify-content-end align-items-center header-top-inner"
+      >
+        <p class="header-top-p">JOIN FOR FREE Rewards</p>
+        <form>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email or ID"
+          />
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button
+            class="btn header-top-btn rounded-circle"
+            style="background-color: #f57812"
+          >
+            GO
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <section class="header">
+      <nav class="navbar navbar-expand-lg nav-wrapper">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img class="img-fluid1" src="img/icon.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="fas fa-bars text-white"></span>
+          </button>
+          <div
+            id="navbarCollapse"
+            class="collapse navbar-collapse"
+            style="width: 100%"
+          >
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">BOOK A TRIP</a>
+              </li>
+              <li class="nav-item px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">DISCOVER GREY-HOUNDS</a>
+              </li>
+
+              <li class="nav-item px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">EXPLORE PLACE</a>
+              </li>
+
+              <li class="nav-item px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">FREE REWARDS</a>
+              </li>
+              <li class="nav-item px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">MANAGE YOUR TRIP</a>
+              </li>
+              <li class="nav-item px-4 py-3">
+                <a href="#" class="nav-link nav-a-item">HELP AND INFO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Main Image and Form Block -->
+    <section class="container">
+      <div class="bg-primary container" style="height: 450px">
+        <img class="img-fluid w-100 h-100" src="img/greyHoundsbus.jpg" alt="" />
+      </div>
+      <div class="outer">
+        <div class="first">
+          <p class="book-trip">BOOK A TRIP</p>
+          <button class="sign-btn-sm">SIGN IN</button>
+          <div class="road-rewards">
+            <p>ROAD REWARDS</p>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email or ID"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </form>
+            <div class="lower">
+              <p class="question-mark rounded-circle">?</p>
+              <button class="btn btn-primary">SIGN IN</button>
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="from-place">
+            <label for="from">From</label>
+            <input
+              type="text"
+              name="from"
+              id="from"
+              placeholder="City, state or zip"
+            />
+            <p class="rounded-circle">A</p>
+          </div>
+          <div class="arrow-design">
+            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="to-place">
+            <label for="to">To</label>
+            <input
+              type="text"
+              name="to"
+              id="to"
+              placeholder="City, state or zip"
+            />
+            <p class="rounded-circle">B</p>
+          </div>
+          <div class="depart-on">
+            <input
+              type="text"
+              name="depart-on"
+              id="depart_on"
+              placeholder="Depart on"
+            />
+          </div>
+          <div class="return-trip">
+            <label>Add return trip</label>
+          </div>
+        </div>
+        <div class="third">
+          <form>
+            <input
+              type="text"
+              name="passenger"
+              id="passenger"
+              placeholder="1 Passenger (0 X )"
+            />
+            <input
+              type="text"
+              name="discount"
+              id="discount"
+              placeholder="Discount Options"
+            />
+            <input
+              type="text"
+              name="promo-code"
+              id="promo_code"
+              placeholder="Add Promo Code"
+            />
+            <button class="btn btn-primary">SEARCH</button>
+          </form>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- Retrive Booking -->
+    <section class="container mb-3 mt-3">
+      <div class="line"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12 retrive-div">
+            <button class="btn">TRACK YOUR BUS</button>
+          </div>
+          <div class="col-lg-4 col-12 retrive-div">
+            <button class="btn">RETRIEVE YOUR BOOKING</button>
+          </div>
+          <div class="col-lg-4 col-12 retrive-div">
+            <button class="btn">FIND YOUR BUS STOP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Block -->
+    <section class="promo">
+      <div class="container promo-div px-3 py-3">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h2 class="promo-h3">Mask Required</h2>
+            <p class="text-white promo-p">
+              All customers, including those who have been vaccinated, are still
+              required by Federal law to wear a mask while on buses, in our
+              terminals, and when you're boarding, even when we're boarding
+              outside.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="d-flex align-items-end" style="height: 100%">
+              <button class="btn btn-design" style="margin-bottom: 10px">
+                Learn About Mask Coverings
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Peace of Mind Section -->
+
+    <section>
+      <h2 class="h2-special">PEACE OF MIND <em>And Ticket Flexibility</em></h2>
+      <div class="container">
+        <ul class="row mobile-carousel-three">
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/covid19/spray-bottle-orange-grey.svg?la=en&hash=04B62B12C540847C3C498DD66A871E2E9AD39350"
+              alt=""
+            />
+            <p class="h3">Enhanced Cleaning</p>
+          </li>
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/images/ecommerce/e-ticket/eticket.svg?la=en&hash=6119C82310DB67F60A8719D3BCF7F3B71C1D0FC7"
+              alt=""
+            />
+            <p class="h3">Ticket Flexibility</p>
+          </li>
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/images/discover/discover-timeline-bus.svg?la=en&hash=B12DC4E223993E173E3692D8E412280F4F3D02AE"
+              alt=""
+            />
+            <p class="h3">Fresh Air</p>
+          </li>
+        </ul>
+      </div>
+      <div class="container promo-div" style="padding: 20px 100px">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h2
+              class="promo-h3"
+              style="
+                color: #484848;
+                font-size: 22px;
+                text-shadow: none;
+                font-weight: bold;
+                text-transform: none;
+              "
+            >
+              Keeping you safe is our #1 priority.
+            </h2>
+            <p class="promo-p" style="color: #484848">
+              Our team continues to work hard to ensure we are all staying safe
+              together.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="d-flex align-items-end" style="height: 100%">
+              <button
+                class="btn btn-design"
+                style="
+                  margin-bottom: 10px;
+                  background-color: #004980;
+                  color: #ffffff;
+                "
+              >
+                Find out More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Block-2 -->
+    <section class="promo">
+      <div class="container promo-div px-3 py-3">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h2 class="promo-h3">RIDES FOR RESPONDERS</h2>
+            <p class="text-white promo-p">
+              We’re offering rides to First Responders volunteering to help in
+              the cities hardest hit by COVID-19.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div
+              class="d-flex align-items-end justify-content-end"
+              style="height: 100%"
+            >
+              <button class="btn btn-design" style="margin-bottom: 10px">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Peace of Mind Section-2 -->
+
+    <section>
+      <h2 class="h2-special">
+        There's a lot to like <em>on our new buses</em>
+      </h2>
+      <div class="container">
+        <ul class="row mobile-carousel-three">
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_free_wifi.png?h=264&w=406&la=en&hash=6402C33B754047ACDA5DBD70652BA22B0D185E8C"
+              alt=""
+            />
+            <p class="h3">Free Wi-Fi on every bus</p>
+          </li>
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_power_outlet.png?h=264&w=406&la=en&hash=A3FC103980836FD7BE2C95A8728485B113D3F77C"
+              alt=""
+            />
+            <p class="h3">Individual power outlets</p>
+          </li>
+          <li class="feature-list-item col-lg-4 col-10">
+            <img
+              src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_legroom.png?h=264&w=406&la=en&hash=7E55A04E15C287B35B0F2356477434127B1A482A"
+              alt=""
+            />
+            <p class="h3">Extra legroom</p>
+          </li>
+        </ul>
+      </div>
+      <div class="container promo-div" style="padding: 20px 100px">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h2
+              class="promo-h3"
+              style="
+                color: #484848;
+                font-size: 22px;
+                text-shadow: none;
+                font-weight: bold;
+                text-transform: none;
+              "
+            >
+              Take a virtual tour of our bus
+            </h2>
+            <p class="promo-p" style="color: #484848">
+              Almost all our buses are now brand new or refurbished head to toe.
+              (And full of handy features on board.)
+            </p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="d-flex align-items-end" style="height: 100%">
+              <button
+                class="btn btn-design"
+                style="
+                  margin-bottom: 10px;
+                  background-color: #004980;
+                  color: #ffffff;
+                "
+              >
+                Look inside the bus
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Div -->
+    <section class="story-div d-flex justify-content-end mt-4">
+      <div class="story-child col-lg-4 d-flex align-items-end flex-column">
+        <p class="story-p1">
+          Florida(Miami) isn't a typical bucket list destination, but it's my
+          musical inspiration.
+        </p>
+        <p class="story-p2">A trip from New York to Florida</p>
+
+        <div style="height: 100%; text-align: right; margin-top: 40px">
+          <button
+            class="btn btn-design"
+            style="
+              margin-bottom: 10px;
+              background-color: #004980;
+              color: #ffffff;
+            "
+          >
+            Watch mark story
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Block -->
+    <section class="hotel">
+      <div class="container p-5">
+        <div class="row" style="margin-top: 20px">
+          <div class="col-lg-6">
+            <div class="row px-4">
+              <div class="col-lg-4 hotel-img">
+                <img
+                  class="rounded-circle"
+                  src="https://www.greyhound.com/-/media/greyhound/images/promos/hotel.jpg?h=125&w=125&la=en&hash=60D9EE186EA330C8690F3F7891944D262AE4AF41"
+                  alt=""
+                  style="width: 125px; height: 125px"
+                />
+              </div>
+              <div class="col-lg-8">
+                <h2 class="hotel-h2">Hotel Savings</h2>
+                <h2 class="hotel-h2-second">Exclusive hotel discounts</h2>
+                <p class="hotel-p">
+                  We've partnered with Priceline to get you discounted rates you
+                  discounted rates on hotel accommodations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row px-4">
+              <div class="col-lg-4 hotel-img">
+                <img
+                  class="rounded-circle"
+                  src="https://www.greyhound.com/-/media/greyhound/images/promos/parking.jpg?h=125&w=125&la=en&hash=58A7A387D20789EC7858E7CB3B39A46856F99DAF"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-8">
+                <h2 class="hotel-h2">Spot Hero</h2>
+                <h2 class="hotel-h2-second">Save on parking</h2>
+                <p class="hotel-p">
+                  As a Greyhound customer, you'll get cheaper rates at hundreds
+                  of Spot Hero locations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div
+            class="col-lg-8 d-flex justify-content-center"
+            style="margin-top: 15px"
+          >
+            <p>For more savings, check out our latest deals and promotions</p>
+          </div>
+          <div class="col-lg-4">
+            <div style="height: 100%">
+              <button
+                class="btn btn-design"
+                style="
+                  background-color: #ffffff;
+                  color: #004980;
+                  border: 1px solid #004980;
+                "
+              >
+                View All Deals
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section style="margin-top: 150px">
+        <h2 class="h2-special">GET INSPIRED TO GO <em>EXPLORE PLACES</em></h2>
+        <div class="container">
+          <ul class="row mobile-carousel-three">
+            <li class="feature-list-item col-lg-4 col-10">
+              <img
+                src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_free_wifi.png?h=264&w=406&la=en&hash=6402C33B754047ACDA5DBD70652BA22B0D185E8C"
+                alt=""
+              />
+              <p class="h3">Free Wi-Fi on every bus</p>
+            </li>
+            <li class="feature-list-item col-lg-4 col-10">
+              <img
+                src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_power_outlet.png?h=264&w=406&la=en&hash=A3FC103980836FD7BE2C95A8728485B113D3F77C"
+                alt=""
+              />
+              <p class="h3">Individual power outlets</p>
+            </li>
+            <li class="feature-list-item col-lg-4 col-10">
+              <img
+                src="https://www.greyhound.com/-/media/greyhound/images/discover/bus_feature_legroom.png?h=264&w=406&la=en&hash=7E55A04E15C287B35B0F2356477434127B1A482A"
+                alt=""
+              />
+              <p class="h3">Extra legroom</p>
+            </li>
+          </ul>
+        </div>
+        <div class="container promo-div" style="padding: 20px 100px">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <h2
+                class="promo-h3"
+                style="
+                  color: #484848;
+                  font-size: 22px;
+                  text-shadow: none;
+                  font-weight: bold;
+                  text-transform: none;
+                "
+              >
+                More to explore
+              </h2>
+              <p class="promo-p" style="color: #484848">
+                Explore featured destinations and trip stories from our
+                travelers.
+              </p>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="d-flex align-items-end" style="height: 100%">
+                <button
+                  class="btn btn-design"
+                  style="
+                    margin-bottom: 10px;
+                    background-color: #004980;
+                    color: #ffffff;
+                  "
+                >
+                  Explore Places
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex justify-content-center" style="margin-top: 50px">
+        <img src="img/destination.png" alt="" class="img-fluid" />
+      </div>
+
+      <div style="padding-left: 10%; padding-top: 40px; padding-bottom: 40px">
+        <h2 style="color: #787878; font-size: 30px">TOP DESTINATIONS</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 destination-div mb-5">
+            <p>Atlantic City, NJ to New York, NY</p>
+            <p>New York, NY to Philadelphia, PA</p>
+            <p>Albany, NY to New York, NY</p>
+            <p>Boston, MA to New York, NY</p>
+            <p>New York, NY to Syracuse, NY</p>
+          </div>
+          <div class="col-lg-4 destination-div mb-5">
+            <p>Las Vegas, NV to Los Angeles, CA</p>
+            <p>Binghamton, NY to New York, NY</p>
+            <p>Baltimore, MD to New York, NY</p>
+            <p>Dallas, TX to Houston, TX</p>
+            <p>New York, NY to Washington, DC</p>
+          </div>
+          <div class="col-lg-4 destination-div mb-5" style="border: none">
+            <p>Monterrey, MX to Nuevo Laredo, MX</p>
+            <p>Buffalo, NY to New York, NY</p>
+            <p>Chicago, IL to Minneapolis, MN</p>
+            <p>Houston, TX to San Antonio, TX</p>
+            <p>Los Angeles, CA to Phoenix, AZ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #004963" class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-12 text-center about-div">
+            <h4
+              style="
+                font-size: 12px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+              "
+            >
+              About
+            </h4>
+          </div>
+          <div class="col-lg-2 col-12 text-center about-div">
+            <h4
+              style="
+                font-size: 12px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+              "
+            >
+              Contact US<br />888-977-7871
+            </h4>
+          </div>
+          <div class="col-lg-4 col-12 text-center"></div>
+          <div class="col-lg-2 col-12 text-center about-div">
+            <h4
+              style="
+                font-size: 12px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+              "
+            >
+              Careers
+            </h4>
+          </div>
+          <div class="col-lg-2 col-12 text-center about-div">
+            <h4
+              style="
+                font-size: 12px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+              "
+            >
+              Accessibility
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
